@@ -8,7 +8,11 @@
 </head>
 
 <body>
-    <button style="background-color: aquamarine;" onclick="sum()">Click Me</button>
+    <button class="button" style="background-color: aquamarine;" onclick="sum()">Click Me</button>
+    <button class="button" style="background-color: aquamarine;" onclick="sum()">Click Me</button>
+    <button id="new-button" style="background-color: aquamarine;" onclick="sum()">Click Me</button>
+    <input id="text-field" onchange="handleChange()" />
+    <h1></h1>
     <!-- javascript -->
     <script>
         // Functions --->
@@ -84,6 +88,60 @@
 
         // }
 
+    // Event and Event Handlers
+        // const handleChange = () =>{
+        // let Button = document.getElementsByClassName("button");  
+        // //  document.getElementsByClassName will always give us an array as a result 
+        // let NewButton = document.getElementsById("new-button"); 
+        // // document.getElementsById will be single value 
+        // }
+
+    //Objects
+//     let person = {
+//         name:"Kaushik",
+//         age:25,
+//         gender: "Male",
+//         email:"abc@gmail.com"
+//     }
+
+//    const heading = document.getElementsByTagName('h1');
+//    heading[0].innerHTML = `Hey My name is: ${person.name} age: ${person.age},gender is : ${person.gender} and email is: ${person.email}`
+    // key point innerHTML is always used to change the content of the html tag using javascript.
+
+    // Arrays
+    // denoted by  []
+//     let users = [
+//         {
+//         name:"Kaushik",
+//         age:25,
+//         gender: "Male",
+//         email:"abc@gmail.com"
+//     },
+//     {
+//         name:"nihal",
+//         age:25,
+//         gender: "Male",
+//         email:"abcd@gmail.com"
+//     }
+// ]
+// pre-defined functions
+// .length() // it gives us the length of the array
+// .split()  // it splits the string into array of elements
+// .join()   // it joins the elements of array and creates string
+// .splice()
+    // let name_to_replace = "Nihal"
+    // let message = "Hey My Name, Is Kaushik"
+    // let splitMessage = message.split(' ')  // result [ "Hey" , "My" ,"Name", "Is" ,"Kaushik"]
+    // splitMessage[splitMessage.length-1] = name_to_replace; // result [ "Hey" , "My" ,"Name", "Is" ,"Nihal"]
+    // let newMessage = splitMessage.join(' ')
+    //  console.log(newMessage)   
+
+    //splice --> // it removes elements from array
+                //  it updates the elements of array
+    // let numbers = [1,2,3,4,5]
+
+    // numbers.splice(2,1,8,9,10);
+    // console.log(numbers)
 
     </script>
 </body>
